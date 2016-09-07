@@ -19,3 +19,20 @@
 .ng-hide {
   height: 0;
 }
+
+.boton-inicio {
+  width:100%;
+  height:30%;
+  font-size: 25px;
+  margin:0 auto;
+}
+
+.resp-correcta {
+  background-color: #33FF00;
+  color:#000;
+}
+
+.resp-incorrecta{
+  background-color: #FF3300;
+  color:#000;
+}

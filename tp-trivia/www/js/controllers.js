@@ -2,10 +2,28 @@ angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function($scope) {
   $scope.preguntas = {};
-  $scope.respuestas = {};
   $scope.preguntas.uno = " Cual fue el primer campeon invicto del futbol argentino?";
-  $scope.respuestas.uno = {};
-  $scope.respuestas.uno.a = " A - San Lorenzo"
+  $scope.Ver = false;
+
+  $scope.Respuesta=function(rta){
+    console.log(rta);
+    $("#ciclon").removeClass("button-positive");
+    $("#ciclon").addClass("resp-correcta");
+    if(rta == 'b'){
+      $("#river").removeClass("button-positive");
+      $("#river").addClass("resp-incorrecta");
+    } else if(rta == 'c'){
+      $("#boca").removeClass("button-positive");
+      $("#boca").addClass("resp-incorrecta");
+    } else if(rta == 'd'){
+      $("#racing").removeClass("button-positive");
+      $("#racing").addClass("resp-incorrecta");
+    }
+  }
+
+  $scope.Empezar=function(){
+    $scope.Ver = true;
+  }
 
 })
 

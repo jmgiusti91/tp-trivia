@@ -1,10 +1,23 @@
 <ion-view view-title="Dashboard">
   <ion-content class="padding">
     <h2>Welcome to Ionic</h2>
-    <input type="text" id="wrapPreguntas" name="wrapPreguntas" ng-model="preguntas.uno" class="wrapPreg" readonly>
-    <br><br><br><br>
-    <button class="button button-positive" ng-model="respuestas.uno.a">
-      
-    </button>
+	<button class="button button-balanced boton-inicio" ng-hide="Ver" ng-click="Empezar()">Comenzar!!!</button>
+    <div ng-show="Ver">
+    	<input type="text" id="wrapPreguntas" name="wrapPreguntas" ng-model="preguntas.uno" class="wrapPreg" readonly>
+	    <br><br><br><br>
+	    <button class="button button-positive" id="ciclon" style="width:100%;" ng-click="Respuesta('a')">
+	      A - San Lorenzo
+	    </button><br><br>
+	    <button class="button button-positive" id="river" style="width:100%;" ng-click="Respuesta('b')">
+	      B - River
+	    </button><br><br>
+	    <button class="button button-positive" id="boca" style="width:100%;" ng-click="Respuesta('c')">
+	      C - Boca
+	    </button><br><br>
+	    <button class="button button-positive" id="racing" style="width:100%;" ng-click="Respuesta('d')">
+	      D - Racing
+	    </button><br><br>
+    </div>
+    
   </ion-content>
 </ion-view>
