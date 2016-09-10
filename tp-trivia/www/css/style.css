@@ -8,12 +8,20 @@
 	transition: all linear 0.5s;
 		-webkit-transition: all linear 0.5s;
 		-moz-transition: all linear 0.5s;
- 	background-color: tomato;
-  	height: 100px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#37a52b+0,4ece27+37,7be84c+72,aeff8c+100 */
+background: #37a52b; /* Old browsers */
+background: -moz-linear-gradient(top,  #37a52b 0%, #4ece27 37%, #7be84c 72%, #aeff8c 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #37a52b 0%,#4ece27 37%,#7be84c 72%,#aeff8c 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #37a52b 0%,#4ece27 37%,#7be84c 72%,#aeff8c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#37a52b', endColorstr='#aeff8c',GradientType=0 ); /* IE6-9 */
+
+  	height: 10em;
   	width:100%;
   	font-size: 20px;
   	font-family: Tahoma, "sans-serif", Serif;
-  	color:#EEE;
+  	color:#444;
+    text-align: center;
+    padding-top: 5em;
 }
 
 .ng-hide {
@@ -35,4 +43,20 @@
 .resp-incorrecta{
   background-color: #FF3300;
   color:#000;
+}
+
+.button[disabled]{
+  opacity:1;
+}
+
+.fondo-inicio {
+  background-image: url("../img/inicio.png");
+  height: 100%;
+  width: 100%;
+}
+
+.fondo-preg {
+  background-image: url("../img/img-preg.jpg");
+  height: 100%;
+  width: 100%;
 }

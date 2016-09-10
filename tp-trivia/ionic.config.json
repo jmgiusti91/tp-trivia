@@ -1,6 +1,6 @@
 {
   "name": "tp-trivia",
-  "app_id": "",
+  "app_id": "8970fafe",
   "gulpStartupTasks": [
     "sass",
     "watch"
